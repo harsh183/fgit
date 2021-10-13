@@ -1,5 +1,3 @@
-#!python3
-
 from plumbum import cli 
 from pyfiglet import Figlet
 from plumbum.cmd import ls, git
