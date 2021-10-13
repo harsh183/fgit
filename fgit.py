@@ -5,6 +5,7 @@ from pyfiglet import Figlet
 from plumbum.cmd import ls, git
 from questionary import checkbox
 from rich.progress import Progress
+from rich import print as rprint
 
 import time
 
@@ -24,7 +25,7 @@ def display_push_progress():
 
         for i in range(100):
             progress.update(push_progress, advance=1)
-            time.sleep(0.1)
+            time.sleep(0.05)
 
 class FancyGitAdd(cli.Application):
     VERSION = "1.3"
@@ -37,9 +38,11 @@ class FancyGitAdd(cli.Application):
 
         selected_files = checkbox("Select a file", choices=files).ask()
         git('add', selected_files)
+        rprint("The files were [bold]added[/bold].")
 
         if self.commit:
             git('commit', '-m', 'updates')
+            rprint("Files successfully added to [green]commit![/]")
 
         if self.push:
             git('push')
