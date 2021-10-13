@@ -1,14 +1,14 @@
 # fgit: Fancy Git Client 
 
-Command lne git client with fancy interface features! See the code at `fgit.py`.
+Command-line git client with fancy interface features! See the code at `fgit.py`.
 
-Based off a [tutorial workshop](https://125summer.tech/cli) I did in Summer 2021 as part of UIUC Summer of Side Projects.
+Based on a [tutorial workshop](https://125summer.tech/cli) I did in Summer 2021 as part of UIUC Summer of Side Projects.
 
-Note this is an example project just to demonstrate the wide variety of command line interface building libraries that python has available. A real client will account for more edge cases and a larger feature set.
+Note that this is an example project to demonstrate the wide variety of command-line interface building libraries that python has available. Of course, an actual client will account for more edge cases and a more extensive feature set.
 
 ## Libraries demonstrated
 
-Most of what's being done here with cool Python libraries.
+Most of what's being done here with excellent Python libraries:
 
 ### questionary
 
@@ -20,21 +20,21 @@ Most of what's being done here with cool Python libraries.
 
 ### plumbum
 
-[plumbum](https://plumbum.readthedocs.io/en/latest/) does a lot of the heavy lifting in many python command line based applications. 
+[plumbum](https://plumbum.readthedocs.io/en/latest/) does a lot of the heavy lifting in many python command-line based applications. 
 
-With `plumbum.cmd` we are able to import any bash scripts and call them as if they were python functions. Here we're using it to call `ls` to get the list of current files and `git` to execute our commands on it.
+With `plumbum.cmd`, we can import bash scripts and call them as python functions. For example, here, we're using it to call `ls` to get the list of current files and `git` to execute our commands on it.
 
-The `cli` module from `plumbum` also lets us use a nice class based syntax for setting a version number, flags and help text to wrap around our script. This lets us focus on the content of the program itself.
+The `cli` module from `plumbum` also lets us use a nice class-based syntax to set a version number, flags, and help text that wrap around our script. This allows us to focus on the content of the program itself.
 
 The article in the See More section is a good place to learn more about `plumbum`.
 
 ### rich
 
-Another common library I've seen in python cli applications is `rich`. It's really good at all sorts of text based formatting, colors, tables, logs, progress bars, and UTF-8 support. `fgit` is using it for color and text style formatting, as well as displaying the progress bar at the end. 
+Another common library I've seen in python CLI applications is `rich`. It's really good at all sorts of text-based formatting, colors, tables, logs, progress bars, and UTF-8 support. `fgit` is using it for color and text style formatting, as well as displaying the progress bar at the end. 
 
 ## See More
 
-* [Building Beautiful Command Line Interfaces with Python](https://codeburst.io/building-beautiful-command-line-interfaces-with-python-26c7e1bb54df) - Summary of many interesting libraries
+* [Building Beautiful Command-Line Interfaces with Python](https://codeburst.io/building-beautiful-command-line-interfaces-with-python-26c7e1bb54df) - Summary of many interesting libraries
 
 * [Plumbum scripting](https://iscinumpy.gitlab.io/post/plumbum-scripting/) - Deeper dive into plumbum for hash-like scripting in python. Pipes, background execution, colors, decorators
 
@@ -51,7 +51,7 @@ After cloning the repository
 
 ## Run
 
-Use `python3` to just run it once the dependencies are setup. 
+Use `python3` to just run it once the dependencies are set up. 
 
 ```bash
 $ python fgit.py [OPTIONS]
