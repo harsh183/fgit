@@ -42,7 +42,7 @@ Another common library I've seen in python CLI applications is `rich`. It's real
 
 * [Building Beautiful Command-Line Interfaces with Python](https://codeburst.io/building-beautiful-command-line-interfaces-with-python-26c7e1bb54df) - Summary of many interesting libraries
 
-* [Plumbum scripting](https://iscinumpy.gitlab.io/post/plumbum-scripting/) - Deeper dive into plumbum for hash-like scripting in python. Pipes, background execution, colors, decorators
+* [Plumbum scripting](https://iscinumpy.gitlab.io/post/plumbum-scripting/) - Deeper dive into plumbum for bash-like scripting in python. Pipes, background execution, colors, decorators
 
 ## Install
 
