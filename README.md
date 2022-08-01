@@ -8,7 +8,7 @@ Command-line git client with fancy interface features! See the code at `fgit.py`
 
 ![shows a progress bar as data is being pushed](push_in_progress.png)
 
-Expanded from a [tutorial workshop](https://125summer.tech/cli) I did in Summer 2021 as part of UIUC Summer of Side Projects.
+Expanded from a [tutorial workshop](https://125summer.tech/cli) I did in Summer 2021 as part of UIUC Summer of Side Projects for a talk at UIUC GNU/Linux Users Group.
 
 Note that this is an example project to demonstrate the wide variety of command-line interface building libraries that python has available. Of course, an actual client will account for more edge cases and a more extensive feature set.
 
